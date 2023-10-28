@@ -4,10 +4,10 @@ package com.company;
 public class Controller {
     public static void action(){
         Input input = new Input();
-        //String show = input.consoleInput();
+        String show = input.consoleInput();
 
         Parser str = new Parser();
-        String[] data = str.parser("Romin Dmitriy Maksimovich 12.12.2000 79003100146 m");
+        String[] data = str.parser(show);
         str.createFile(data);
 
 
